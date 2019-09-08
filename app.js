@@ -35,13 +35,13 @@ const app = express();
 const users = require('./routes/users');
 
 // Port Number
-const port = process.env.PORT ||3000;
+const port = process.env.PORT || 8080;
 
 // CORS Middleware
 app.use(cors());
 
 // Set Static Folder
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/angularsrc/dist')));
 
 // Body Parser Middleware
 app.use(bodyParser.json());
@@ -60,7 +60,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public/index.html'));
+  res.sendFile(path.join(__dirname, '/angularsrc/dist/index.html'));
 });
 
 // Start Server
