@@ -1,0 +1,17 @@
+<div class="container">
+   <div class="countrydes">
+           <p class="text-center">CHINA TOP COMPINES<p></div>
+      <div class="Top">
+            <h1 class="Title">TOP 10:</h1>
+      </div>
+      <div class="row">
+       <div class="col-3" *ngFor="let ladies of ladiesClothes" >
+            <div class="card">
+               <div class="card-body">
+                       <a href="{{ladies.routerLink}}" target="_blank"><img src="assets/{{ladies.image}}" /></a>
+               </div>
+            </div>
+            <br> 
+         </div>
+      </div>
+   </div>

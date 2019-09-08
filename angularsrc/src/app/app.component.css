@@ -1,0 +1,26 @@
+div.example {
+    text-align:center;
+    color: white;
+    z-index: 10;
+  
+}
+@media screen and (min-width: 601px) {
+  div.example {
+   font-size: 54px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 24px;
+  }
+}
+.jumbotron {
+       background-color: #000000;
+       padding: 0rem 0rem 3rem !important;
+}
+img{
+max-width:100%;
+max-height:100%;
+
+}

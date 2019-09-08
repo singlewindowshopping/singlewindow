@@ -1,0 +1,46 @@
+
+<!--<div class="container-fluid">
+       <app-navbar></app-navbar> 
+       <div class="header">
+       <div class="header-row-2">
+         <div class="logo">
+            <h1 class="header-logo-text">Single Window Shopping</h1>
+         </div>
+         <br>
+            <div>
+              <div class="row justify-content-md-center">
+                  <div class="col-1" *ngFor="let country of countries">
+                       <a routerLink="{{country.routerLink}}" class="nav-link" routerLinkActive="active">
+                        <div class="card" style="background: black;">
+                             <img src="assets/{{country.image}}" />
+                         </div>
+                      </a>
+                      <br> 
+                  </div>
+            </div>
+            </div>
+      </div>
+   </div>
+   <flash-messages></flash-messages>
+   <router-outlet></router-outlet>
+</div>-->
+<!--
+https://picresize.com/api?fetch=https://www.picresize.com/images-->
+
+<div class="container-fluid">
+         <app-navbar></app-navbar> 
+         <div class="jumbotron jumbotron-fluid">
+                 <div class="example">SINGLE WINDOW SHOPPING</div>
+         <div class="row justify-content-lg-center">
+                <div class="col-lg-1 col-md-1 col-sm-3 col-xs-3 col-3" *ngFor="let country of countries">
+                       <a routerLink="{{country.routerLink}}" class="nav-link" routerLinkActive="active">
+                        <div class="card" style="background: black;">
+                             <img src="assets/{{country.image}}" />
+                         </div>
+                      </a>
+                   </div>
+         </div>    
+        </div>
+         <flash-messages></flash-messages>
+         <router-outlet></router-outlet>
+</div>

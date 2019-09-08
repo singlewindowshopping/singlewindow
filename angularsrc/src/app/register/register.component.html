@@ -1,0 +1,32 @@
+	<!--style="background-image: url('assets/bg-registration-form-2.jpg');"-->
+  <div class="wrapper" >
+			<div class="inner">
+				<form (submit)="onRegisterSubmit()">
+					<h3>Registration Form</h3>
+						 <div class="form-wrapper">
+                <label for="name">Name</label>
+                <input type="text" [(ngModel)]="name" name="name" class="form-control" id="name" placeholder="Enter Name">
+              </div>
+						<div class="form-wrapper">
+							<label for="username">Username</label>
+					     <input type="text" [(ngModel)]="username" name="username" class="form-control" id="username" placeholder="Enter Username">
+						</div>
+            <div class="form-wrapper">
+              <label for="email">Email</label>
+            <input type="email" [(ngModel)]="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-wrapper">
+              <label for="password">Password</label>
+              <input type="password"  [(ngModel)]="password" name="password"  class="form-control" id="password" placeholder="Enter Password">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> I caccept the Terms of Use & Privacy Policy.
+                <span class="checkmark"></span>
+              </label>
+            </div>
+				    <button type="submit">Register Now</button>
+				</form>
+      </div>
+      </div>

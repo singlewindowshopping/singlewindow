@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row justify-content-md-center">
+<div class="table-responsive">
+<table class="table table-bordered"  style="background-color: white;">
+  <thead class="thead-dark">
+    <tr>
+        <th>Company Name</th>
+        <th>Promo Code</th>
+        
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let promo of promocodes">
+       <td>{{promo.companyName}}</td>
+       <td>{{promo.promoCode}}</td>
+      </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
