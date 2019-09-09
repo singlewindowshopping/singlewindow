@@ -1,5 +1,5 @@
 {
-  "name": "meanauthapp",
+  "name": "singlewindow",
   "version": "1.0.0",
   "description": "MEAN stack authentication app",
   "main": "app.js",
